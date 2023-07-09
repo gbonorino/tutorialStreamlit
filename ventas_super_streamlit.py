@@ -1,5 +1,4 @@
 import pandas as pd
-import openpyxl
 import streamlit as st
 import plotly.express as px
 
@@ -67,12 +66,7 @@ with right_column:
     st.subheader("Valor medio por transaccion")
     st.subheader(f":red[$ {valor_medio_transaccion}]")
 st.text('Estadísticos esenciales derivados de la tabla. \n Se calcula la suma total de las ventas \n y el valor promedio de las ventas.')
-st.latex(r'''
-    ($$
-    \overline{x}=\frac{1}{n} \sum_{i=1}^{n} x_{i}
-    $$
-''')
-st.latex("\int a x^2 \,dx")
+
 # Separador
 st.divider()    
 
