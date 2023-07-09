@@ -1,3 +1,8 @@
+import pandas as pd
+import plotly.express as px
+import streamlit as st
+
+
 df = pd.read_excel(
     io='ventas_supermercado_modif.xlsx',
     engine='openpyxl',
