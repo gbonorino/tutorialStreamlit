@@ -9,7 +9,6 @@ df = pd.read_excel(
 # emojis - https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(               # configura la pagina entera
     page_title="Tablero de ventas",
-    page_icon=":fox:",
     layout="wide")
 
 # Panel lateral
@@ -65,7 +64,7 @@ with left_column:
 with right_column:
     st.subheader("Valor medio por transaccion")
     st.subheader(f":red[$ {valor_medio_transaccion}]")
-st.text('Estadísticos esenciales derivados de la tabla. \n Se calcula la suma total de las ventas \n y el valor promedio de las ventas.')
+st.text('Estadísticos esenciales derivados de la tabla. \nSe calcula la suma total de las ventas y el valor promedio de las ventas.')
 
 # Separador
 st.divider()    
